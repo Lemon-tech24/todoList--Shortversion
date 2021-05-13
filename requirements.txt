@@ -28,7 +28,6 @@ Pillow==8.1.2
 pipenv==2020.11.15
 playsound==1.2.2
 psutil==5.8.0
-PyAudio @ file:///C:/Users/alisa/Downloads/PyAudio-0.2.11-cp39-cp39-win_amd64.whl
 PyAutoGUI==0.9.51
 PyGetWindow==0.0.9
 PyMsgBox==1.0.9
