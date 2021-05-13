@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.whole{
+    background:lightgreen;
+    margin: 45px auto;
+    width:500px;
+    height: 100%;
+    text-align:center;
+    padding:10px;
+}
+
+.add #text_add{
+    width:300px;
+    font-size:40px;
+    border-radius:10px;
+}
+
+.add #submit_add{
+    font-size: 20px;
+    width:120px;
+    line-height:30px;
+    height:100%;
+}

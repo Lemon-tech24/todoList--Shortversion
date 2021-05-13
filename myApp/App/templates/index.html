@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<div class="whole">
+<form class="add"  action="/todo/" method="post">
+    {% csrf_token %}
+    <input id ="text_add" type="text" name="content">
+    <input id ="submit_add"type="submit" value="New Item">
+</form>
+    <ul>
+    {% for items in form %}
+        <li>{{ items.name }}
+            <form class = "delete" style="display:inline-block" action="/delete/{{items.id}}" method="post">
+                    {% csrf_token %}
+                    <input id = "btn_del" type="submit" value="Delete">
+            </form>
+        </li>
+    {% endfor %}
+</ul>
+
+
+</div>
+</body>
+</html>
